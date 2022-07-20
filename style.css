@@ -1,0 +1,370 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 1656px;
+    max-height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.top-banner {
+    display: flex;
+    background-color: rgba(22, 22, 22, 1);
+    margin: 50px 0;
+    border-radius: 10px;
+
+}
+
+.top-banner-information {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+
+}
+
+.top-banner-information h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.top-banner-information p {
+    font-size: 16px;
+
+}
+
+.heading {
+    color: white;
+
+}
+
+.watch-live-btn {
+    width: 240px;
+    height: 56px;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.watch-live-btn a {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 550;
+    text-decoration: none;
+
+}
+
+.fa-arrow-right {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.player img {
+    width: 581px;
+    height: 613px;
+}
+
+/*------------------
+    main-section  
+--------------------*/
+.main-section {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sub-section {
+    background-color: black;
+    display: inline-block;
+    border-radius: 5px;
+    width: 25%;
+    height: 210px;
+
+}
+
+
+.tournament-information {
+    border: 1px solid rgb(206, 199, 199);
+    padding: 45px;
+    margin-bottom: 25px;
+    background-color: rgb(228, 232, 235);
+    border-radius: 5%;
+}
+
+.participant-country {
+    display: flex;
+}
+
+.participant-country p {
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.match-group-blog button {
+    display: block;
+    height: 35px;
+    width: 187px;
+    background-color: white;
+    margin: 25px;
+    border-radius: 5px;
+    margin-left: 75px;
+
+}
+
+.match-group-blog button a {
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.match-group-blog .blog {
+    background-color: red;
+
+}
+
+.match-group-blog .blog a {
+    color: white;
+}
+
+/* --------------
+sub-section-2 
+---------------*/
+.sub-section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 15px;
+    justify-items: center;
+    width: 100%;
+}
+
+.transfer-button {
+    border-radius: 5px;
+}
+
+.transfer-button a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 550;
+    color: black;
+}
+
+.duration-massage span {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.view-all {
+    text-align: center;
+    margin: 50px 0;
+    visibility: hidden;
+}
+
+.view-all-button {
+    width: 240px;
+    height: 56px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.view-all-button a {
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/* ----------------
+footer-section
+---------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    background-color: black;
+    color: white;
+    padding: 75px;
+    margin: 50px 0px;
+    justify-content: center;
+
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.Goal {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+}
+
+hr {
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 35px;
+}
+
+
+.menu ul {
+    display: flex;
+    font-size: 16px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 25px;
+
+}
+
+.icon span {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social-icon {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.fa-twitter {
+    padding: 0px 25px;
+}
+
+/* -----------------------------
+Responsiveness using Media query
+-------------------------------- */
+/* smaller device */
+@media screen and (max-width:576px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-section {
+
+        background-color: white;
+        display: flex;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+    }
+
+    .match-group-blog button {
+        display: block;
+        height: 35px;
+        width: 187px;
+        background-color: white;
+        margin: 25px;
+        border-radius: 5px;
+        justify-content: center;
+        border: 1px solid gainsboro;
+    }
+
+    .match-group-blog button a {
+        padding: 5px 25px;
+    }
+
+    .sub-section-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        margin-left: 15px;
+        justify-items: center
+    }
+
+    .view-all {
+        visibility: visible;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+/* ------------------
+medium-device
+------------------ */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .top-banner {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-section {
+
+        background-color: white;
+        display: inline;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .match-group-blog button {
+        display: inline;
+        height: 35px;
+        width: 187px;
+        background-color: white;
+        margin: 25px;
+        border-radius: 5px;
+        justify-content: center;
+        border: 1px solid gainsboro;
+    }
+
+    .match-group-blog button a {
+        padding: 5px 25px;
+    }
+
+    .sub-section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin-left: 15px;
+        justify-items: center
+    }
+
+    .view-all {
+        visibility: visible;
+    }
+
+}
