@@ -7,10 +7,9 @@ body {
     margin: auto;
 }
 
-.half-width {
-    width: 50%;
-}
-
+/* -------------------
+top-banner section 
+---------------------*/
 .top-banner {
     display: flex;
     background-color: rgba(22, 22, 22, 1);
@@ -66,6 +65,7 @@ body {
 .player img {
     width: 581px;
     height: 613px;
+    display: block;
 }
 
 /*------------------
